@@ -1,0 +1,1 @@
+mvn -e clean compile package tomcat7:redeploy -Dmaven.test.skip=true -f"/home/ankit/work/eclipse-workspace/SkillMap_Java_project-master/scrapper"
