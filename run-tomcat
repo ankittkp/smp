@@ -1,0 +1,15 @@
+cd ..
+cd tanishka
+sudo su
+cd apache-tomcat-8.5.9
+cd webapps
+ls
+// check if walkinapp and walkinapp.war exist if they do then
+        rm -r walkinapp
+        rm -r walkinapp.war
+cd ..
+cd bin
+./catalina.sh jpda run
+
+// then on another terminal
+mvn -e clean compile package tomcat7:redeploy -Dmaven.test.skip=true -f"/home/tanishka/hrbot_all_projects/SkillMap_Java_project/scrapper"
