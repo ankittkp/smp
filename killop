@@ -1,0 +1,4 @@
+ps -ef |grep tomcat
+kill -9 product_id
+
+sudo chmod -R 777 .....
